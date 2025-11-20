@@ -7,6 +7,9 @@ export default function Header() {
             <nav className="flex gap-4">
                 <Link href="/" className="hover:underline">Intro</Link>
                 <Link href="/sobre" className="hover:underline">Sobre</Link>
+                <Link href="/Profissoes" className="hover:underline">Profissao</Link>
+                <Link href="/Caracteristicas" className="hover:underline">Caracteristicas</Link>
+                <Link href="/Tecnologias" className="hover:underline">Tecnologias</Link>
             </nav>
         </header>
     )
