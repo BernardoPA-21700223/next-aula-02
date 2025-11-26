@@ -1,5 +1,5 @@
 import MagiaDoJSX from '@/components/MagiaDoJSX/MagiaDoJSX'
-import Profissao from '@/components/Profissao/Profissao'
+import Profissao from '@/components/Tecnologia/Tecnologia'
 import Saudacao from '@/components/Saudacao/Saudacao'
 
 
@@ -19,6 +19,7 @@ export default function HomePage() {
       <p>React é uma biblioteca JS para construir interfaces de utilizador (UI) através de componentes.</p>
       <MagiaDoJSX />
       <Saudacao />
+      
       
          </div>
   )

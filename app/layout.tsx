@@ -27,23 +27,30 @@ export default function RootLayout({ children,}: Readonly<{children: React.React
 
   // Rendering
 
-  return (
+return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased
-          
-          min-h-screen flex flex-col items-center justify-start p-20 gap-2
-          `} 
-      >
-        <Header />
-        <main className="bg-blue-200 p-5 rounded-2xl min-h-[70vh] 
-                          w-full md:w-2/3 lg:w-1/2 xl:w-1/3">
+      <body className='flex flex-col justify-start gap-4 p-20 items-center min-h-screen'>
+        
+        <header className="flex flex-col items-center">
+          <h1>React & Next.js</h1>
+          <Header />
+        </header>
+        
+        <main className="bg-blue-200 p-5 rounded-2xl max-w-2xl min-h-[70vh]">
           {children}
         </main>
+        
         <footer>DIW, {data.getFullYear()}</footer>
+
       </body>
     </html>
   );
+
+
+
+
+
+  
 }
 
 
